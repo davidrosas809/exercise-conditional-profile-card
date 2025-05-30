@@ -35,9 +35,9 @@ function render(variables = {}) {
           <img src="${variables.avatarURL}" class="photo" />
           <h1>${variables.name == null ? "First Name" : variables.name}
            ${variables.lastname == null ? "Last Name" : variables.lastName}</h1>
-          <h2>${variables.role}</h2>
-          <h3>${variables.city}</h3>
-          <h2>${variables.country}</h2>
+          <h2>${variables.role == null ? "Your role" : variables.role}</h2>
+          <h3>${variables.city == null ? "City" : variables.city}</h3>
+          <h2>${variables.country == null}</h2>
           <ul class=${variables.socialMediaPosition}>
             <li><a href="https://twitter.com/${
               variables.twitter == null ? !"Twitter ID" : variables.twitter
